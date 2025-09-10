@@ -1,80 +1,115 @@
-# Ex. No. 3 – Scenario-Based Report Development Utilizing Diverse Prompting Techniques  
+# Ex. No. 3 – Scenario-Based Report Development Using Prompting Techniques  
 
-**Date:**  
-**Register Number:**  
+**Date: 09.09.2025**  
+**Register Number: 212223240033**  
 
 ---
 
 ## Aim  
-To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone.  
+To study and apply different prompting techniques for designing an AI-powered chatbot.  
+The chatbot should assist customers in:  
+- Troubleshooting products  
+- Tracking orders  
+- Answering general inquiries  
 
-In this experiment, different prompting strategies are employed, ranging from **basic task-oriented prompts** to **complex persona-driven prompts**, to guide the chatbot’s responses.  
+---
+
+## Theory  
+Prompting is the method of guiding AI responses through carefully designed instructions.  
+Different prompting strategies can affect **accuracy, tone, and clarity** of chatbot responses.  
+
+In this experiment, we explore the following prompting techniques:  
+1. Direct Instruction Prompts  
+2. Contextual Prompting  
+3. Persona-Based Prompting  
+4. Few-Shot Prompting  
+5. Chain-of-Thought Prompting  
+6. Instruction with Constraints  
+7. Reflective Prompting  
+
+Each method helps the chatbot handle customer queries in a unique way.  
 
 ---
 
 ## Algorithm  
 
-### 1. Direct Instruction Prompts  
-- **Objective:** Provide concise responses to customer inquiries.  
-- **Prompt Pattern:**  
-  *“When a customer asks for the status of their order, reply with: ‘Your order is currently being processed and will be delivered by [date].’”*  
+1. Identify common customer queries:  
+   - Order status  
+   - Technical issues  
+   - General help  
+
+2. Select a prompting technique.  
+
+3. Frame a suitable **prompt pattern** (instruction given to AI).  
+
+4. Test the chatbot’s response to each query.  
+
+5. Record the quality of response (clarity, helpfulness, tone).  
+
+---
+
+## Examples of Prompting Techniques  
+
+### 1. Direct Instruction Prompt  
+**Objective:** Simple and concise answers.  
+**Example Prompt:**  
+*“When a customer asks about their order, reply: ‘Your order is being processed and will be delivered by [date].’”*  
 
 ---
 
 ### 2. Contextual Prompting  
-- **Objective:** Incorporate prior context to give detailed answers based on user’s previous interaction.  
-- **Prompt Pattern:**  
-  *“If the customer previously mentioned that they haven’t received their order, say: ‘I see that you mentioned your order hasn't arrived yet. Let me check the details for you and get back shortly.’”*  
+**Objective:** Use conversation history for better answers.  
+**Example Prompt:**  
+*“If the customer said their order hasn’t arrived, reply: ‘I see your order hasn’t arrived yet. Let me check the details and get back to you.’”*  
 
 ---
 
 ### 3. Persona-Based Prompting  
-- **Objective:** Design the chatbot to adopt a persona for engaging interactions.  
-- **Prompt Pattern:**  
-  *“Pretend you are a friendly, helpful customer service representative. Use a conversational tone, such as: ‘Hey there! I’m here to help with any questions you might have. Let’s get your issue sorted!’”*  
+**Objective:** Make the chatbot sound like a friendly human agent.  
+**Example Prompt:**  
+*“Act like a helpful customer service representative. Say things like: ‘Hey there! I’m here to help. Let’s get this fixed!’”*  
 
 ---
 
 ### 4. Few-Shot Prompting  
-- **Objective:** Teach the chatbot to generalize from examples.  
-- **Prompt Pattern:**  
-  *“Here are some examples of how to handle technical questions:  
-  - ‘My phone isn’t charging.’ → ‘Have you tried using a different cable? If that doesn’t work, it may be an issue with the port.’  
-  - ‘The screen is flickering.’ → ‘It sounds like a display issue. Have you tried restarting the device?’  
-  Now, respond to: ‘My app keeps crashing.’”*  
+**Objective:** Learn from examples.  
+**Example Prompt:**  
+*“Examples:  
+- Q: ‘My phone isn’t charging.’ → A: ‘Try another cable. If not, the port may be faulty.’  
+- Q: ‘The screen flickers.’ → A: ‘This looks like a display issue. Restart and check again.’  
+Now answer: ‘My app keeps crashing.’”*  
 
 ---
 
 ### 5. Chain-of-Thought Prompting  
-- **Objective:** Use step-by-step reasoning for complex troubleshooting.  
-- **Prompt Pattern:**  
-  *“When a customer reports their laptop overheating, guide them through these steps:  
-  - Ask if they are using the laptop on a soft surface.  
-  - Suggest moving the laptop to a flat, hard surface for better airflow.  
-  - Ask if they’ve cleaned the vents recently.  
-  - Recommend restarting the device to see if the issue persists.  
-  Now, solve: ‘My laptop fan is making a loud noise.’”*  
+**Objective:** Solve problems step by step.  
+**Example Prompt:**  
+*“For laptop overheating:  
+1. Ask if it’s on a soft surface.  
+2. Suggest using a hard surface.  
+3. Ask if vents are cleaned.  
+4. Recommend restarting.  
+Now solve: ‘My laptop fan is noisy.’”*  
 
 ---
 
 ### 6. Instruction with Constraints  
-- **Objective:** Provide assistance under specific conditions (e.g., word count, tone).  
-- **Prompt Pattern:**  
-  *“Respond to order inquiries in no more than 50 words and avoid technical jargon. Example: ‘Your order is on the way and should arrive by [date]. Feel free to reach out if you need anything else.’”*  
+**Objective:** Answer under set rules (short, simple).  
+**Example Prompt:**  
+*“Reply in under 50 words. Avoid technical terms. Example: ‘Your order is on the way and will arrive by [date].’”*  
 
 ---
 
 ### 7. Reflective Prompting  
-- **Objective:** Reduce misunderstandings by reflecting the user’s query back before answering.  
-- **Prompt Pattern:**  
-  *“When a customer asks for help, first reflect their question back to them. For example, if they ask: ‘How can I reset my password?’ respond with: ‘You’re asking how to reset your password, correct? Here’s how you can do it.’”*  
+**Objective:** Repeat the query to confirm before answering.  
+**Example Prompt:**  
+*“Q: ‘How do I reset my password?’ → A: ‘You’re asking how to reset your password, correct? Here’s how…’”*  
 
 ---
 
-## Result  
-The various types of prompts were executed successfully, and the chatbot responded appropriately according to each prompting strategy.  
-
----
-
-## Conclusion  
-Thus, the prompts were executed successfully. By applying **direct, contextual, persona-based, few-shot, chain-of-thought, constrained, and reflective prompting**, the chatbot demonstrated flexibility in handling diverse customer service scenarios with improved clarity, engagement, and efficiency.  
+## Observation  
+- Direct prompts give **fast but basic** replies.  
+- Contextual and reflective prompts reduce **misunderstandings**.  
+- Persona-based prompts make replies more **engaging**.  
+- Few-shot and chain-of-thought prompts improve **problem-solving ability**.  
+- Instruction with constrain
